@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Chatbot Monica</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/icons/favicon.ico" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/tweenmax.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main>
+			<div class="container">
+				<div class="innerContainer">
+					<div class="window">
+
+					<div class="monicaImg">
+						<img src="img/monicabody.png" class="monicaImg1">
+						<img src="img/monicabody2.png" class="monicaImg2">
+					</div>
+
+					<div class="suggestiveMessagesContainer">
+						<div class="suggestiveMessagesText">
+							Een paar suggesties
+						</div>
+						<div id="suggestiveMessages" class="suggestiveMessages">
+							<div class="suggestiveMessage">BMI Berekenen</div>
+							<div class="suggestiveMessage">Blessure vermijding</div>
+							<div class="suggestiveMessage">Hardloopschoenen</div>
+							<div class="suggestiveMessage">Aandachtspunten hardlopen</div>
+						</div>
+					</div>
+
+					<div class="typeBarContainer">
+						<div class="typxeBarInnerContainer">
+							<div class="typeBar">
+								<input id="input" type="text" placeholder="Hier kun je iets tegen Monica zeggen" autocomplete="off" />
+							</div>
+							<div class="voiceIcon">
+								<img src="img/voiceicon.png">
+							</div>
+						</div>
+					</div>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</main>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBnGH8NdfciYR4YOb7pscilC0bieVczzAI",
+    authDomain: "monicabot-80e7a.firebaseapp.com",
+    databaseURL: "https://monicabot-80e7a.firebaseio.com",
+    projectId: "monicabot-80e7a",
+    storageBucket: "monicabot-80e7a.appspot.com",
+    messagingSenderId: "175713888599",
+    appId: "1:175713888599:web:1c0337b88b78f6eb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+	<script src="js/script.js"></script>
+	</div>
+
+
+</body>
+
+</html>

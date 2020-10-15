@@ -1,0 +1,261 @@
+ * {
+   box-sizing: border-box;
+ }
+
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display: block;
+ }
+
+ html, body {
+   line-height: 1;
+   float: left;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   min-width: 340px;
+ }
+
+ ol, ul {
+   list-style: none;
+ }
+
+ blockquote, q {
+   quotes: none;
+ }
+
+ blockquote:before, blockquote:after, q:before, q:after {
+   content: '';
+   content: none;
+ }
+
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ .wrapper {
+   min-height: calc(100vh - 50px);
+ }
+
+ .container {
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+ }
+
+ .innerContainer {
+   padding: 0px 200px;
+ }
+
+ .window {
+   float: left;
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 120px;
+ }
+
+ .monicaMessageC {
+   float: right;
+   width: 100%;
+   position: relative;
+ }
+
+ .monicaMessageIcon {
+   float: right;
+   width: 30px;
+   position: absolute;
+   top: 26%;
+   right: 0px;
+ }
+
+ .monicaMessageIcon img {
+   width: 50px;
+   vertical-align: middle;
+ }
+
+ .monicaMessage {
+   float: right;
+   max-width: 0px;
+   min-width: 10px;
+   background: #1F75A3;
+   margin: 0 3% 0 0;
+   padding: 2.5%;
+   color: white;
+   /* Edit */
+   font-family: 'Open Sans', calibri, sans-serif;
+   /* Edit */
+   font-size: 18px;
+   /* Added */
+   line-height: normal;
+   border-radius: 50px;
+ }
+
+ .userMessageC {
+   float: left;
+   width: 100%;
+   height: 81px;
+   position: relative;
+   margin: 2% 0;
+   word-wrap: break-word;
+ }
+
+ .userIcon {
+   float: left;
+   width: 10%;
+   position: absolute;
+   top: 20%;
+   left: -20px;
+ }
+
+ .userIcon img {
+   width: 50px;
+   vertical-align: middle;
+ }
+
+ .monicaImg1, .monicaImg2, .monicaImg3 {
+   position: absolute;
+ }
+
+ .userMessage {
+   float: left;
+   max-width: 0px;
+   background: #19B1C2;
+   padding: 2.3%;
+   color: white;
+   /* Edit */
+   font-family: 'Open Sans', calibri, sans-serif;
+   /* Edit */
+   font-size: 18px;
+   /* Added */
+   line-height: normal;
+   margin: 0 0 0 3%;
+   border-radius: 50px;
+ }
+
+ input:focus, input.form-control:focus {
+   outline: none !important;
+   outline-width: 0 !important;
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+ }
+
+ input[type=text] {
+   /* Added */
+   font-family: 'Open Sans', calibri, sans-serif;
+   width: 90%;
+   padding: 15px 50px;
+   margin: 1.5% 4% 1.5% 3%;
+   border-radius: 30px;
+   border: none;
+   font-size: 18px;
+   font-weight: bold;
+ }
+
+ input::-webkit-input-placeholder {
+   opacity: 0.5;
+ }
+
+ .typeBarContainer {
+   width: 100%;
+   background: #FFDE59;
+   position: fixed;
+   z-index: 1;
+   bottom: 0;
+   left: 0;
+ }
+
+ .typxeBarInnerContainer {
+   float: left;
+   width: 100%;
+ }
+
+ .typeBar {
+   float: left;
+   width: 91%;
+ }
+
+ .voiceIcon {
+   float: left;
+   width: 0%;
+   margin: 22px 0 0 0;
+ }
+
+ .suggestiveMessagesContainer {
+   display: none;
+   float: left;
+   width: 60%;
+   margin: 0 20%;
+ }
+
+ .suggestiveMessagesText {
+   text-align: center;
+   margin: 20px 0px;
+ }
+
+ .suggestiveMessagesText p {
+   /* Added */
+   font-family: 'Open Sans', calibri, sans-serif;
+   color: #191919;
+   font-size: 18px;
+ }
+
+ .suggestiveMessage {
+   float: left;
+   width: 22.9%;
+   background: #19b1c2;
+   padding: 3% 5%;
+   color: white;
+   margin: 0 1%;
+   vertical-align: middle;
+   min-height: 75px;
+   border-radius: 30px;
+   text-align: center;
+   cursor: pointer;
+ }
+
+ .suggestiveMessage p {
+   /* Added */
+   font-family: 'Open Sans', calibri, sans-serif;
+   color: white;
+   font-size: 14px;
+ }
+
+ .monicaImg {
+   position: fixed;
+   top: 30%;
+   left: 47%;
+   z-index: -1;
+ }
+
+ .monicaImg img {
+   height: 250px;
+   opacity: 0;
+ }
+
+ .voiceIcon img {
+   float: left;
+   width: 54px;
+ }
+
+ /* Responsive */
+ /*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+ @media (min-width: 768px) and (max-width: 1024px) {}
+
+ /*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+ @media (min-width: 320px) and (max-width: 480px) {}
